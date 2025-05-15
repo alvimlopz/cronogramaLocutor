@@ -1,0 +1,36 @@
+<div class="container py-4">
+  <div class="accordion" id="accordionProvas">
+    <div class="accordion-item mb-3" *ngFor="let prova of provas">
+      <h2 class="accordion-header" [id]="'heading' + prova.id">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                [attr.data-bs-target]="'#collapse' + prova.id"
+                aria-expanded="false"
+                [attr.aria-controls]="'collapse' + prova.id">
+          {{ prova.horario }} – {{ prova.bateria }}
+        </button>
+      </h2>
+      <div [id]="'collapse' + prova.id"
+           class="accordion-collapse collapse"
+           [attr.aria-labelledby]="'heading' + prova.id"
+           data-bs-parent="#accordionProvas">
+        <div class="accordion-body row">
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li *ngFor="let equipe of prova.equipes">• {{ equipe }}</li>
+            </ul>
+          </div>
+         
+          <div class="col-md-6">
+            <p><strong>{{ prova.rounds }}</strong></p>
+            <p *ngFor="let mov of prova.movimentos">{{ mov }}</p>
+            <p class="text-primary"><strong>PRESS CAP:</strong> {{ prova.cap }}</p>
+             <p class="text-primary"><strong>Aviso: </strong> {{ prova.aviso }}</p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>

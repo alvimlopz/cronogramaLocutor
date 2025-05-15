@@ -1,0 +1,28 @@
+.top-banner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0; // fundo
+}
+
+.img-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-locutor {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  height: 310px;
+  z-index: 1; // abaixo da navbar
+}
+
+/* Garante que a navbar fique por cima */
+.navbar {
+  z-index: 2;
+  position: relative;
+}

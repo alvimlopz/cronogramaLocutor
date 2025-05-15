@@ -1,0 +1,78 @@
+
+<div class="container py-4">
+  <div class="accordion" id="accordionAvisos">
+
+    <!-- Chamadas para atletas -->
+    <div class="accordion-item mb-3">
+      <h2 class="accordion-header" id="headingChamadas">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChamadas"
+          aria-expanded="true" aria-controls="collapseChamadas">
+          Chamadas para Atletas
+        </button>
+      </h2>
+      <div id="collapseChamadas" class="accordion-collapse collapse show" aria-labelledby="headingChamadas"
+        data-bs-parent="#accordionAvisos">
+        <div class="accordion-body">
+          <ul>
+            <li *ngFor="let frase of chamadasAtletas">{{ frase }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avisos de intervalo -->
+    <div class="accordion-item mb-3">
+      <h2 class="accordion-header" id="headingIntervalo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntervalo"
+          aria-expanded="false" aria-controls="collapseIntervalo">
+          Avisos de Intervalo
+        </button>
+      </h2>
+      <div id="collapseIntervalo" class="accordion-collapse collapse" aria-labelledby="headingIntervalo"
+        data-bs-parent="#accordionAvisos">
+        <div class="accordion-body">
+          <ul>
+            <li *ngFor="let frase of avisosIntervalo">{{ frase }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frases para o público -->
+    <div class="accordion-item mb-3">
+      <h2 class="accordion-header" id="headingPublico">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePublico"
+          aria-expanded="false" aria-controls="collapsePublico">
+          Frases de Animação para o Público
+        </button>
+      </h2>
+      <div id="collapsePublico" class="accordion-collapse collapse" aria-labelledby="headingPublico"
+        data-bs-parent="#accordionAvisos">
+        <div class="accordion-body">
+          <ul>
+            <li *ngFor="let frase of frasesPublico">{{ frase }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frases motivacionais -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingMotivacionais">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMotivacionais"
+          aria-expanded="false" aria-controls="collapseMotivacionais">
+          Frases Motivacionais
+        </button>
+      </h2>
+      <div id="collapseMotivacionais" class="accordion-collapse collapse" aria-labelledby="headingMotivacionais"
+        data-bs-parent="#accordionAvisos">
+        <div class="accordion-body">
+          <ul>
+            <li *ngFor="let frase of frasesMotivacionais">{{ frase }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

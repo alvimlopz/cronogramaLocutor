@@ -21,7 +21,8 @@ export class PatrocinadoresComponent {
   patrocinadoresOficiais: string[] = [
     'Drogaria Rede Center: aferindo pressão e glicemia gratuitamente. Cuide da sua saúde.',
     'Dudu Suplementos: degustação de pasta de amendoim e pré-treinos top! Passa lá!',
-    'Fitness Wear e Basílio Store: roupas esportivas de qualidade e muito estilo.',
+    'Fitness Wear: roupas esportivas de qualidade e muito estilo.',
+    'Basílio Store: lugar de garantir seu iphone novo.', 
     'Futura Construções, Realizar Móveis e Decor Pisos: soluções incríveis pra renovar seu lar.',
     'Wordnet: conectando o evento com internet de alta velocidade.',
     'Pacheco Auto Escola: tá na hora de tirar sua CNH? Fala com eles!',
@@ -33,11 +34,11 @@ export class PatrocinadoresComponent {
     'Trans RP: transporte com agilidade e confiança.',
     'AGM Dryice: soluções com gelo seco e tecnologia.',
     'Solar Flex: cortinas, persianas e toldos sob medida.',
-    'Faculdade Unialfa EAD: graduação e pós 100% online e acessível.'
+    'Faculdade Unialfa EAD: graduação e pós 100% online e acessível.',
+    'Doces da Bibi'
   ];
 
   parceirosPremiacao: string[] = [
-    'Doces da Bibi',
     'LR Suplementos',
     'An-Fit RUN',
     'Coraggio Loja de Sapatos Femininos',
